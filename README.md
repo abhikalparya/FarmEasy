@@ -41,7 +41,7 @@ The dataset used for this project is taken from the [Kaggle](https://www.kaggle.
 - rainfall - rainfall in mm
 - label - crop type
 
-<img src="assets/data.PNG" />
+![data](https://user-images.githubusercontent.com/81465377/210740507-3402380e-16b6-42d0-8231-675167f5b4c6.PNG)
 
 ---
 
