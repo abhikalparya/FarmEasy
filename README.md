@@ -11,6 +11,11 @@
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
+> Project Status: **Ongoing** 🚧 
+
+![Ongoing](https://img.shields.io/badge/status-ongoing-brightgreen)
+
+
 ---
 
 ## What is FarmEasy🌾?
@@ -23,6 +28,8 @@ However, a single farmer cannot be expected to take into account all the innumer
 ---
 
 ## Project Architecture🏗️
+
+![architecture](https://user-images.githubusercontent.com/81465377/210936849-e8f366a8-8097-4d32-bc6d-175eb99ca960.png)
 
 ---
 
@@ -61,11 +68,22 @@ The machine learning model is built using the following steps:
 ---
 
 ## Backend🔧
+The backend of the project is built using Flask and is hosted on AWS. The backend is responsible for the following tasks:
+- Fetch the data from the frontend
+- Perform ensemble learning on the data
+- Predict the crop type
+- And then return the result to the frontend
 
+![backend](https://user-images.githubusercontent.com/81465377/210936962-3e9106ae-f798-4e9b-84fb-6476b2d1b054.png)
 
 ---
 
 ## Frontend🖥️
+The frontend of the project is built using HTML, CSS. The frontend is responsible for the following tasks:
+- Taking the input from the user
+- Connect to the backend and fetch the result
+- Display the result to the user
+
 
 ---
 
