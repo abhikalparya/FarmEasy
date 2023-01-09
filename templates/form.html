@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='form.css')}}">
+    <title>FarmEasy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="container">
+                <p>⚠️If you don't know the N, P, K values of your soil,<br> have it analysed at a government soil testing facility.⚠️
+                  <br> Otherwise, fill out the form.</p><br><br>
+                <form action="/recommend" method="post"><br><br>
+                   <a>  Nitrogen Content </a><br><br>
+                   <input type="number" placeholder=" " name="N" min="0" max="140" ><br><br><br>
+                   <a> Phosphorus Content </a><br><br>
+                   <input type="number" placeholder=" " name="P" min="5" max="145" ><br><br><br>
+                   <a> Pottassium Content </a><br><br>
+                   <input type="number" placeholder=" " name="K" min="5" max="205"><br><br><br>
+                   <a>Average Temperature (°C)</a><br><br>
+                   <input type="number" placeholder="{{ temp }} " name="Temp" min="8" max="44" value="{{ temp }}"><br><br><br>
+                   <a>Average Humidity (%)</a><br><br>
+                   <input type="number" placeholder="{{ humd }} " name="Humd" min="14" max="100" value="{{ humd }}"><br><br><br>
+                   <a> pH of Soil </a><br><br>
+                   <input type="number" placeholder="  " name="Ph" min="2" max="9"><br><br><br>
+                   <a>Average Rainfall (cm)</a><br><br>
+                   <input type="number" placeholder="{{ rain }} " name="rnfall" min="20" max="300" value="{{ rain }}"><br><br><br>
+                   <button type="submit" id="sbmt">Submit</button>
+                  
+                </form>
+                <button onclick="history.back()" id="rhome">Home</button>
+
+            </div>
+    </div>
+</body>
+</html>

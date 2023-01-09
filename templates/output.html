@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <title>FarmEasy</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='output.css') }}">
+    
+</head>
+<body>          
+    <div class="container">
+        <h1>{{ crop }}</h1>
+        <img src="{{filename}}">
+        <p><span> Description :</span> {{ description }}
+            <br>
+            <hr>
+            <span> Type :</span> {{ types }}
+            <br>
+            <hr>
+            <span> Disease :</span> {{ disease }}
+            <br>
+            <hr>
+            <span>Companion :</span> {{ companion }}
+            <br>
+            <hr>
+            <span>Pests :</span> {{ pests }}
+            <br>
+            <hr>
+            <span> Fertilizer :</span> {{ fertilizer }}
+            <br>
+            <hr>
+            <span>Tips :</span> {{ tips }}
+            <br>
+            <hr>
+            <span>Spacing :</span> {{ spacing }}
+            <br>
+            <hr>
+            <span>Watering :</span> {{ watering }}
+            <br>
+            <hr>
+            <span>Storage :</span> {{ storage }}
+        </p>
+    </div>
+    
+   
+</body>
+</html>

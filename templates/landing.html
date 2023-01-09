@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="static/favicon.png">
+	<title>FarmEasy</title>
+	<link rel="stylesheet" type="text/css" href="static/landing.css">
+
+	<link rel="stylesheet"
+  	href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="updateDistricts()">
+	<!--header--->
+	<header>
+		<a href="#" class="logo">FarmEasy🌾</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#recommendation">Recommend</a></li>
+			<li><a href="#footer">Contact Us</a></li>
+		</ul>
+	</header>
+
+	<!--Home section--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h1>Find crops that <br>suit your farm</h1>
+			<p>By using machine learning predict the  <br> best crop to grow in a particular season.</p>
+			<a href="#recommendation" class="home-btn">Let's go now</a>
+		</div>
+	</section>
+
+	<!--about--->
+	<section class="about" id="about">
+		<div class="text">
+			<h2>How FarmEasy <br> works?</h2>
+		</div>
+
+		<div class="row-items">
+			<div class="about-box">
+				<div class="about-img">
+					<img src="static/step1.png">
+				</div>
+				
+				<p>Smart Input : We collect all crucial crop-related parameters. Soil N, P, and K levels, as well as average temperature, rainfall, and humidity.</p>
+			</div>
+
+			<div class="about-box">
+				<div class="about-img">
+					<img src="static/step2.jpg">
+				</div>
+				
+				<p>Model trained with a dataset of 22 crops using a variety of machine learning approaches and a support vector for increased confidence.</p>
+			</div>
+
+			<div class="about-box">
+				<div class="about-img">
+					<img src="static/step3.jpg">
+				</div>
+				
+				<p>Recommends the most suitable crop following analysis, along with a full crop description.</p>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!--crop recommendation--->
+	<section class="recommendation" id="recommendation">
+		<div class="title">
+			<h2>Crop Recommendation!</h2>
+		</div>
+
+		<div class="recommendation-content">
+			<div class="recommendation-box">
+				<div class="recommendation-form"> 
+					<h5>Select your State and District to get started</label>
+	
+						<form action="/form" method="post">
+							<select class="form-control" id="state" name="state" >
+								<option value="SelectState">Select State</option>
+								<option value="Andhra Pradesh">Andhra Pradesh</option>
+								<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+								<option value="Assam">Assam</option>
+								<option value="Bihar">Bihar</option>
+								<option value="Chhattisgarh">Chhattisgarh</option>
+								<option value="Goa">Goa</option>
+								<option value="Gujarat">Gujarat</option>
+								<option value="Haryana">Haryana</option>
+								<option value="Himachal Pradesh">Himachal Pradesh</option>
+								<option value="Jammu And Kashmir">Jammu And Kashmir</option>
+								<option value="Jharkhand">Jharkhand</option>
+								<option value="Karnataka">Karnataka</option>
+								<option value="Kerala">Kerala</option>
+								<option value="Madhya Pradesh">Madhya Pradesh</option>
+								<option value="Maharashtra">Maharashtra</option>
+								<option value="Manipur">Manipur</option>
+								<option value="Meghalaya">Meghalaya</option>
+								<option value="Mizoram">Mizoram</option>
+								<option value="Nagaland">Nagaland</option>
+								<option value="Odisha">Odisha</option>
+								<option value="Punjab">Punjab</option>
+								<option value="Rajasthan">Rajasthan</option>
+								<option value="Sikkim">Sikkim</option>
+								<option value="Tamil Nadu">Tamil Nadu</option>
+								<option value="Telangana">Telangana</option>
+								<option value="Tripura">Tripura</option>
+								<option value="Uttaranchal">Uttaranchal</option>
+								<option value="Uttar Pradesh">Uttar Pradesh</option>
+								<option value="West Bengal">West Bengal</option>
+								<option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+								<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+								<option value="Chandigarh">Chandigarh</option>
+								<option value="Dadra And Nagar Haveli">Dadra And Nagar Haveli</option>
+								<option value="Daman and Diu">Daman and Diu</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Lakshadweep">Lakshadweep</option>
+								<option value="Puducherry">Puducherry</option>
+							</select>
+							<br>
+							<br>
+							<br>
+							<select class="form-co" id="district" name="district">
+								<option value="">Select District</option>
+							</select>
+							<br>
+							<br>
+							<br>
+							<button type="submit" id="sbmt">Submit</button>
+						</form>
+				</div>
+				<div class="live-tv"> 
+					<h5>Kisan 24/7</h5>
+					<iframe style="height: 90%;width: 90%;margin-left: 6%;margin-top: 2%;" src="https://www.youtube.com/embed/ANmq29CcmXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--footer--->
+	
+	<section class="footer" id="footer"></section>
+		<footer>
+        	<div class="footer-content">
+            	<h3>FarmEasy🌾</h3>
+            	<ul class="socials">
+                	<li><a href="https://github.com/abhikalparya/FarmEasy" target="_blank"><i class="fa fa-github"></i></a></li>
+                	<li><a href="https://twitter.com/AbhikalpArya" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                	<li><a href="https://www.linkedin.com/in/abhikalp-arya-7179431b9/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            	</ul>
+        	</div>
+        	<div class="footer-bottom">
+            	<p>copyright &copy;2023 FarmEasy🌾| designed by <span>Abhikalp Arya</span></p>
+        	</div>
+    	</footer>
+	</section>
+
+	<!--link to js--->
+	<script type="text/javascript" src="static/landing.js"></script>
+
+</body>
+</html>

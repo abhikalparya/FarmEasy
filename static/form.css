@@ -1,0 +1,119 @@
+*{
+    margin:0;
+}
+body{
+    background: url(/static/nig1.png) no-repeat center;
+    background-size: cover;
+}
+
+.container{
+    background: white;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: -1px -1px 45px -3px rgba(54,54,54,0.75);
+    -webkit-box-shadow: -1px -1px 45px -3px rgba(54,54,54,0.75);
+    -moz-box-shadow: -1px -1px 45px -3px rgba(54,54,54,0.75);
+    padding: 50px 50px 100px 50px;
+}
+
+.container a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: lighter;
+    line-height: 50px;
+    opacity: 0.7;
+}
+span{
+    font-size: 3vw; 
+    font-weight: bold;
+}
+
+
+button#sbmt{
+    padding: 15px 50px;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+    border-radius: 10px;
+    background: rgb(1, 184, 32);
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    float: right;
+    margin-right:133px;
+}
+button#rhome{
+    padding: 15px 50px;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+    border-radius: 10px;
+    background: rgb(1, 184, 32);
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    float: left;
+}
+
+
+.container p{
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px 10px;
+    color: red;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+span#nig{
+    font-size: 1vw;
+}
+
+input{
+    width: 500px;
+    height: 40px;
+    padding: 2px 30px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(233, 233, 233);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width:1024px){
+    span#nig{
+        font-size: 1.5vw;
+    }
+    input{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width:768px){
+    span#nig{
+        font-size: 2vw;
+    }
+    input{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width:425px){
+    span#nig{
+        font-size: 3.8vw;
+    }
+    input{
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (max-width:320px){
+    span#nig{
+        font-size: 5vw;
+    }
+    input{
+        font-size: 5vw;
+    }
+}
