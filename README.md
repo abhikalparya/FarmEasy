@@ -87,7 +87,7 @@ The frontend of the project is built using HTML, CSS and JavaScript. The fronten
 ---
 
 ## Project Demo🎥
-![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white) <br>
 [![Video](https://img.youtube.com/vi/l0T5REBvfcI/0.jpg)](https://www.youtube.com/watch?v=l0T5REBvfcI)
 
 ---
