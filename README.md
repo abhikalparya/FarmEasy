@@ -10,10 +10,10 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![JavaScript](	https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-> Project Status: **Ongoing** 🚧 
-
-![Ongoing](https://img.shields.io/badge/status-ongoing-brightgreen)
+> Project Status: **Completed** 🎉
 
 
 ---
@@ -27,13 +27,13 @@ However, a single farmer cannot be expected to take into account all the innumer
 
 ---
 
-## Project Architecture🏗️
-
-![architecture](https://user-images.githubusercontent.com/81465377/210936849-e8f366a8-8097-4d32-bc6d-175eb99ca960.png)
-
----
-
-## Project Structure📁
+## Features🔮
+- **Easy to use** - The user interface of the project is very simple and easy to use. The user just needs to enter the required data and the project will predict the crop type.
+- **Accurate** - The project uses machine learning algorithms to predict the crop type. The accuracy of the model is **99.27%**.
+- **Used Docker** - The project is containerized using Docker. The project is also integrated with GitHub Actions for continuous integration and continuous deployment.
+- **Implementated CI/CD** - The project is deployed on AWS using Docker. The project is also integrated with GitHub Actions for continuous integration and continuous deployment.
+- **Deployed on AWS** - The project is deployed on AWS EC2 using Docker.
+- **Responsive** - The project is responsive and can be used on any device.
 
 ---
 
@@ -79,19 +79,26 @@ The backend of the project is built using Flask and is hosted on AWS. The backen
 ---
 
 ## Frontend🖥️
-The frontend of the project is built using HTML, CSS. The frontend is responsible for the following tasks:
+The frontend of the project is built using HTML, CSS and JavaScript. The frontend is responsible for the following tasks:
 - Taking the input from the user
 - Connect to the backend and fetch the result
 - Display the result to the user
 
-
 ---
 
 ## Project Demo🎥
+![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+[![Video](https://img.youtube.com/vi/l0T5REBvfcI/0.jpg)](https://www.youtube.com/watch?v=l0T5REBvfcI)
 
 ---
 
 ## Project Screenshots📸
+![home-page](https://user-images.githubusercontent.com/81465377/213855553-b2ae624c-f119-494b-bc3c-298629a0fe3d.jpg)
+![about-page](https://user-images.githubusercontent.com/81465377/213855752-e3494c73-3b32-49af-8f45-48f125d4d2c9.jpg)
+![recommend-page](https://user-images.githubusercontent.com/81465377/213855965-f7358239-ee57-426f-b976-8b797ec3c615.jpg)
+![footer](https://user-images.githubusercontent.com/81465377/213856165-318753d7-8ef5-48f2-8ad1-6ae85ab6afbd.jpg)
+![form](https://user-images.githubusercontent.com/81465377/213856444-3389c0e8-0f05-4652-9530-55bd8f2dbb5f.jpg)
+![result](https://user-images.githubusercontent.com/81465377/213856637-f5398f09-ac09-4b63-946a-21d670b5b660.jpg)
 
 ---
 
