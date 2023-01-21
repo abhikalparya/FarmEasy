@@ -1,0 +1,38 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: |
+        docker build -t farmeasy .
+
+    - name: Test the app
+      run: |
+        docker run farmeasy pytest
+
+    - name: Deploy to EC2
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        EC2_INSTANCE_ID: ${{ secrets.EC2_INSTANCE_ID }}
+      run: |
+        apt-get update -y
+        apt-get install -y python3-pip
+        pip3 install --upgrade pip
+        pip3 install awscli
+        aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+        aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+        aws configure set default.region ap-northeast-1
+        aws ec2 start-instances --instance-ids $EC2_INSTANCE_ID
+        aws ssm send-command --instance-ids $EC2_INSTANCE_ID --document-name "AWS-RunShellScript" --parameters commands=["sudo docker pull farmeasy:latest","sudo docker stop farmeasy || true","sudo docker run -d --name farmeasy -p 80:80 farmeasy:latest"]
